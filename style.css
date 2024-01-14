@@ -13,7 +13,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
+
+
 
 .nav {
     position: fixed;
@@ -24,7 +27,7 @@
     justify-content: space-between;
     padding: 0 4em;
     background: #fff;
-    z-index: 999;
+    z-index: 10;
 }
 
 a {
@@ -44,8 +47,13 @@ a {
     transform: translateX(-50%);
     font-family:'TitlingGothicFBExt';
     padding: 1em;
-    z-index: 1000;
+    z-index: 99;
 }
+
+.logo-container {
+    overflow: hidden;
+}
+
 
 .container {
     width: 100%;
@@ -56,7 +64,7 @@ a {
 .content {
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: whitesmoke;
     position: relative;
     padding: 0 4em;
 }
@@ -69,3 +77,27 @@ a {
 img {
     margin-bottom: 4em;
 }
+
+
+.text-content {
+    padding: 10%;
+    font-size: 28px;
+    font-family: 'Ekstra-Regular';
+    text-transform: uppercase;
+    line-height: 1.8em;
+}
+
+
+.projects {
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+
+.project-img {
+    width: 33%;
+}
+

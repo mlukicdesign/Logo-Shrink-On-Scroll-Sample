@@ -1,0 +1,56 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+}
+
+.loader-clip {
+    position:absolute;
+    width: 100vh;
+    height: 33.3vh;
+    overflow: clip;
+}
+
+.clip-top {
+    top: 0;
+    width: 100vw;
+    clip-path: inset(0 0 0 0);
+    background: black;
+}
+
+.clip-bottom {
+    width: 100vw;
+    bottom: 0;
+    clip-path: inset(0 0 0 0);
+    background: black;
+}
+
+.clip-center {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 33.3vh;
+    top: 33.3vh;
+}
+
+.marquee {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200vw;
+    color: whitesmoke;
+    mix-blend-mode: difference;
+    font-size: 16vw;
+}
+
+.marquee-container {
+    width: 100%;
+    padding-top: 0.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'TitlingGothicFBExt';
+}
