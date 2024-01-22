@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="loader.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="menu.css" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
@@ -15,9 +16,10 @@
 <body>
 
 
-   
 
-    <div class="loader">
+   <!-- Loader -->
+
+    <!-- <div class="loader">
         <div class="loader-clip clip-top">
             <div class="marquee">
                 <div class="marquee-container">
@@ -37,8 +39,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
+    
+    <!--Nav-->
 
     <div class="nav">
         <div class="items-left">
@@ -46,9 +50,52 @@
             <a href="#">About</a>
             <a href="#">Contact</a>
         </div>
-        <div class="items-right">
-            <a href="login.php">Login</a>
-            <a href="register.php">Register</a>
+        <div class="menu-toggle">
+            <div id="menu-toggle-btn">
+                <a href="#">menu</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="nav-container">
+        <div class="nav-inner">
+            <div class="col-flex">
+                <div class="nav-logo">HRMEC</div>
+                <div class="nav-socials">
+                <a href="#">Behance</a>
+                <a href="#">Behance</a>
+                <a href="#">Behance</a>
+                <a href="#">Behance</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="nav-link">
+                    <a href="#">Work</a>
+                    <div class="nav-item-wrapper"></div>
+                </div>
+                <div class="nav-link">
+                    <a href="#">Service</a>
+                    <div class="nav-item-wrapper"></div>
+                </div>
+                <div class="nav-link">
+                    <a href="#">About</a>
+                    <div class="nav-item-wrapper"></div>
+                </div>
+                <div class="nav-link">
+                    <a href="#">Home</a>
+                    <div class="nav-item-wrapper"></div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <div class="links">
+                <a href="#">Behance</a>
+                <a href="#">Behance</a>
+                <a href="#">Behance</a>
+                <a href="#">Behance</a>
+            </div>
         </div>
     </div>
 
@@ -90,7 +137,7 @@
     </div>
 
     <script src="animation.js"></script>
-    
+    <script src="menu-animation.js"></script>
 </body>
 
 </html>
